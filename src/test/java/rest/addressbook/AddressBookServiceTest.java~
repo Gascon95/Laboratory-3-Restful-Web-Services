@@ -348,7 +348,7 @@ public class AddressBookServiceTest {
 		 * Tries to delete once again the same user and checks that the answer is the
 		 * same as the last time. This proves the DELETE method is both idempotent,
 		 * cause the answer is the same, and not safe, cause it has delete something
-		 * from the server..
+		 * from the server.
 		 */ 	
 		Response response2 = client.target("http://localhost:8282/contacts/person/2")
 				.request().delete();
